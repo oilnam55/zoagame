@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>충치 디펜스 게임하기 2.2 (조아게임)</title>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+  <h1>충치 디펜스 게임하기 2.2 (조아게임)</h1>
+  <div id="game-container"></div>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      document.getElementById("game-container").appendChild(player);
+      player.load("cavity-defense-2.2");
+    });
+  </script>
+</body>
+</html>
