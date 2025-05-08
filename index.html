@@ -15,12 +15,12 @@
       height: 100vh;
     }
     #game-container {
-      width: 800px;
+      width: 780px;
       height: 600px;
       background-color: black;
     }
     ruffle-player {
-      width: 800px;
+      width: 780px;
       height: 600px;
       display: block;
     }
@@ -32,7 +32,7 @@
     window.addEventListener("DOMContentLoaded", () => {
       const ruffle = window.RufflePlayer.newest();
       const player = ruffle.createPlayer();
-      player.style.width = "800px";
+      player.style.width = "780px";
       player.style.height = "600px";
       document.getElementById("game-container").appendChild(player);
       player.load("cavity-defense-2.2.swf");
