@@ -35,5 +35,11 @@
       document.getElementById("game-container").appendChild(player);
       player.load("cavity-defense-2.2.swf");
     });
+
+    // ✅ 휠 이벤트로 부모 페이지 스크롤 막기
+    window.addEventListener('wheel', function(e) {
+      e.preventDefault();
+    }, { passive: false });
   </script>
 </body>
+</html>
